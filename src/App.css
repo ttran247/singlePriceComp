@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
-}
+@media screen and (min-width: 480px) {
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  margin-top: 60px;
+  background-color: hsl(204, 43%, 93%);
+  font-weight:400;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  button {
+    font-family: 'Karla', sans-serif;
+    background-color: #BFDF32;
+    border-radius: 5px;
+    height: 50px;
+    width: 250px;
+    color: white;
+    box-shadow: 1px 1px 25px 0 rgba(0,0,0,0.10)
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
   }
-  to {
-    transform: rotate(360deg);
+  .cardContainer{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 25px 0 rgba(0,0,0,0.40);
+    justify-content: center;
+    border: #ffffff;
+    
+    
+    
+  }
+  
+  .top{
+    border: 1px solid #ffffff;
+    padding: 50px;
+    background-color: white;
+    height: 30vh;
+    
+  }
+  #join{
+    color: #60B4B6;
+    font-weight: 700;
+    
+  }
+  .trial{
+    color: #C7DE4D;
+    font-weight: 700;
+    
+  }
+  
+  
+  .info{
+    color: hsl(204, 43%, 93%)
+  }
+  .left{
+    background-color: #2BB3B1;
+    padding-top: 70px;
+    padding-left: 50px;
+    color: white;
+        height: 30vh;
+            word-wrap: break-word;
+
+
+
+
+  }
+  
+  
+  .right{
+    background-color: #4BBEBD;
+  padding-top: 70px;
+    padding-left: 50px;
+        color: white;
+        height: 30vh;
+
+
+    
+  }
+
+}
+@media screen and (min-width: 650px) {
+body{
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  margin-top: 60px;
+  background-color: hsl(204, 43%, 93%);
+  font-weight:400;
+}
+  
+  button {
+    font-family: 'Karla', sans-serif;
+    background-color: #BFDF32;
+    border-radius: 5px;
+    height: 50px;
+    width: 250px;
+    color: white;
+    box-shadow: 1px 1px 25px 0 rgba(0,0,0,0.10)
+  }
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+  .cardContainer{
+    width: 50vw;
+    height: 55vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr 1fr ;
+    grid-template-rows: 210px; /* top row is 100px in height */
+    grid-auto-rows: 250px; 
+    box-shadow: 1px 1px 25px 0 rgba(0,0,0,0.40);
+    justify-content: center;
+    border: #ffffff;
+    
+    
+    
+  }
+  
+  .top{
+    border: 1px solid #ffffff;
+    grid-column: 1/3;
+    padding: 50px;
+    background-color: white;
+    height: 300px;
+    
+  }
+  #join{
+    color: #60B4B6;
+    font-weight: 700;
+    
+  }
+  .trial{
+    color: #C7DE4D;
+    font-weight: 700;
+    
+  }
+  
+  
+  
+  .info{
+    color: hsl(204, 43%, 93%)
+  }
+  .left{
+    background-color: #2BB3B1;
+    padding: 20px;
+    color: white;
+  }
+  
+  
+  .right{
+    background-color: #4BBEBD;
+    padding: 20px;
+    color: white;
+        word-wrap: break-word;
+
+    
   }
 }
